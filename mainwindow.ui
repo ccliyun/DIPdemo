@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>794</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageUI</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="threshold" name="tab_1">
+       <attribute name="title">
+        <string>Threshold</string>
+       </attribute>
+      </widget>
+      <widget class="filter" name="tab_2">
+       <attribute name="title">
+        <string>Filter</string>
+       </attribute>
+      </widget>
+      <widget class="morphology" name="tab_3">
+       <attribute name="title">
+        <string>Morphology</string>
+       </attribute>
+      </widget>
+      <widget class="other" name="tab_4">
+       <attribute name="title">
+        <string>Morphological</string>
+       </attribute>
+      </widget>
+      <widget class="other2" name="tab_5">
+       <attribute name="title">
+        <string>Reconstruction</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>threshold</class>
+   <extends>QWidget</extends>
+   <header>threshold.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>filter</class>
+   <extends>QWidget</extends>
+   <header>filter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>other</class>
+   <extends>QWidget</extends>
+   <header>other.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>morphology</class>
+   <extends>QWidget</extends>
+   <header>morphology.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>other2</class>
+   <extends>QWidget</extends>
+   <header>other2.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
